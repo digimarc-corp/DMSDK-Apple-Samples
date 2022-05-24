@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ARDemo/ARDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DM Stock Take/DM Stock Take.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DMSDemo/DMSDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Drop-In View Controller/Drop-In View Controller.xcodeproj">
+   </FileRef>
+</Workspace>

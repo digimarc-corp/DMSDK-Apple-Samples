@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="91z-Gr-JDP">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="GW1-dx-Zoi">
+            <objects>
+                <navigationController id="91z-Gr-JDP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uw7-2G-Mpn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1UE-Hi-fHz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFv-tg-uy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-521" y="597"/>
+        </scene>
+        <!--Drop-In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Drop-In View Controller" id="BYZ-38-t0r" customClass="MenuViewController" customModule="DigimarcVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HoQ-PH-Q8A">
+                                <rect key="frame" x="96" y="226.5" width="183" height="214"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4D-zF-kHP">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Show Modal"/>
+                                        <connections>
+                                            <action selector="showReaderViewControllerModallyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnh-ff-wDJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-OE-3Da">
+                                        <rect key="frame" x="0.0" y="37" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Show Navigation"/>
+                                        <connections>
+                                            <action selector="showReaderViewControllerAsNavigationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryS-DU-XEK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYr-bZ-hMb">
+                                        <rect key="frame" x="0.0" y="74" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Show Storyboard Segue"/>
+                                        <connections>
+                                            <segue destination="5qH-hi-3Zw" kind="show" id="3AZ-RY-2oe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCQ-cU-AyT">
+                                        <rect key="frame" x="0.0" y="111" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Show With Custom Overlay"/>
+                                        <connections>
+                                            <action selector="showCustomUIViewControllerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5U3-TR-NUF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fz-3k-eIT">
+                                        <rect key="frame" x="0.0" y="148" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Display Location Data"/>
+                                        <connections>
+                                            <action selector="showDetectionLocationViewControllerAsNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWg-m2-OSh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vF-GQ-XuR">
+                                        <rect key="frame" x="0.0" y="185" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Control Detection Region"/>
+                                        <connections>
+                                            <action selector="showRectOfInterestViewControllerAsNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Twv-IO-84t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HoQ-PH-Q8A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BUJ-s7-rKp"/>
+                            <constraint firstItem="HoQ-PH-Q8A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lfw-8X-q7v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drop-In View Controller" id="SWf-dX-xEe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="596.85157421289364"/>
+        </scene>
+        <!--Detector View Controller-->
+        <scene sceneID="92E-oz-RRe">
+            <objects>
+                <viewController storyboardIdentifier="storyboardDetector" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5qH-hi-3Zw" customClass="DMSDetectorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5FP-kA-fMv"/>
+                        <viewControllerLayoutGuide type="bottom" id="RMS-uW-QGY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O0b-Dt-VHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="eCV-JG-i33" kind="show" identifier="showWebView" id="qhY-Wq-TdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXL-xe-eQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="597"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4CD-aa-q0H">
+            <objects>
+                <viewController id="eCV-JG-i33" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jHj-Ok-HWI"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTD-P3-Tct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KZ1-oF-Uiz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmM-5u-ffe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="597"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemBlueColor"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
