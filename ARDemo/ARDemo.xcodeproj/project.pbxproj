@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		931929C0219F715300691500 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931929BF219F715300691500 /* MessageView.swift */; };
-		9367C44E25192F6300070C88 /* DMSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93840C1F2347AC0C00D20685 /* DMSDK.xcframework */; };
-		9367C44F25192F6300070C88 /* DMSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93840C1F2347AC0C00D20685 /* DMSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93AC428221921D8E0088B233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC427821921D8E0088B233 /* ViewController.swift */; };
 		93AC428321921D8E0088B233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AC427921921D8E0088B233 /* Assets.xcassets */; };
 		93AC428521921D8E0088B233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC427B21921D8E0088B233 /* LaunchScreen.storyboard */; };
 		93AC428621921D8E0088B233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC427D21921D8E0088B233 /* Main.storyboard */; };
 		93AC428821921D8E0088B233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC428021921D8E0088B233 /* AppDelegate.swift */; };
 		93FBC2EE21A608EA00704CBF /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBC2ED21A608EA00704CBF /* PlaneNode.swift */; };
+		A2128CB5283D85D5001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CB4283D85D5001F176A /* DMSDK */; };
 		A226C58C21A48CFD004B0311 /* PayloadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58B21A48CFD004B0311 /* PayloadNode.swift */; };
 		A226C58E21A494AC004B0311 /* NodeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58D21A494AC004B0311 /* NodeUtilities.swift */; };
 		A2BB7EE22370C5A50098D00C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EE12370C5A40098D00C /* Readme.md */; };
@@ -28,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9367C44F25192F6300070C88 /* DMSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		931929BF219F715300691500 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		93840C1F2347AC0C00D20685 /* DMSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DMSDK.xcframework; path = ../../DMSDK.xcframework; sourceTree = "<group>"; };
 		93AC427821921D8E0088B233 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93AC427921921D8E0088B233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AC427C21921D8E0088B233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +45,6 @@
 		A226C58B21A48CFD004B0311 /* PayloadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadNode.swift; sourceTree = "<group>"; };
 		A226C58D21A494AC004B0311 /* NodeUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeUtilities.swift; sourceTree = "<group>"; };
 		A2BB7EE12370C5A40098D00C /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		A2D7E2112252A8E2003D148A /* DMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DMSDK.framework; path = ../../DMSDK.framework; sourceTree = "<group>"; };
 		E40A85A520F3AFE800904CD0 /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9367C44E25192F6300070C88 /* DMSDK.xcframework in Frameworks */,
+				A2128CB5283D85D5001F176A /* DMSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,22 +77,12 @@
 			path = ARDemo;
 			sourceTree = "<group>";
 		};
-		93AC429321921F990088B233 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2D7E2112252A8E2003D148A /* DMSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E40A859C20F3AFE800904CD0 = {
 			isa = PBXGroup;
 			children = (
 				A2BB7EE12370C5A40098D00C /* Readme.md */,
-				93840C1F2347AC0C00D20685 /* DMSDK.xcframework */,
 				93AC427721921D8E0088B233 /* ARDemo */,
 				E40A85A620F3AFE800904CD0 /* Products */,
-				93AC429321921F990088B233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +111,9 @@
 			dependencies = (
 			);
 			name = ARDemo;
+			packageProductDependencies = (
+				A2128CB4283D85D5001F176A /* DMSDK */,
+			);
 			productName = DemoApp;
 			productReference = E40A85A520F3AFE800904CD0 /* ARDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -154,6 +143,9 @@
 				Base,
 			);
 			mainGroup = E40A859C20F3AFE800904CD0;
+			packageReferences = (
+				A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
+			);
 			productRefGroup = E40A85A620F3AFE800904CD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2128CB4283D85D5001F176A /* DMSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
+			productName = DMSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E40A859D20F3AFE800904CD0 /* Project object */;
 }
