@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xsb-8h-4UX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lka-Yj-xNS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <gestureRecognizers/>
+                    </arscnView>
+                    <navigationItem key="navigationItem" id="Thn-tk-7de">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="UoE-HZ-mTq">
+                            <connections>
+                                <action selector="resetAction:" destination="BV1-FR-VrT" id="DRF-aV-p8D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageView" destination="6y3-xa-AA9" id="0bd-iw-Vbd"/>
+                        <outlet property="sceneView" destination="lka-Yj-xNS" id="ZPV-9f-lBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="6y3-xa-AA9" customClass="MessageView" customModule="ARDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="clh-OT-4FC">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXt-9w-FvE">
+                                <rect key="frame" x="118" y="45" width="4.5" height="38.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4v-1Z-caS">
+                                        <rect key="frame" x="0.0" y="20.5" width="4.5" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upp-3H-ANT">
+                                        <rect key="frame" x="0.0" y="0.0" width="4.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b4v-1Z-caS" firstAttribute="top" secondItem="upp-3H-ANT" secondAttribute="bottom" id="3Qh-8T-xWu"/>
+                                    <constraint firstItem="b4v-1Z-caS" firstAttribute="top" secondItem="upp-3H-ANT" secondAttribute="bottom" id="Qvb-Xq-thm"/>
+                                    <constraint firstItem="upp-3H-ANT" firstAttribute="top" secondItem="AXt-9w-FvE" secondAttribute="top" id="YzD-6H-hpI"/>
+                                    <constraint firstItem="b4v-1Z-caS" firstAttribute="leading" secondItem="AXt-9w-FvE" secondAttribute="leading" id="bfz-e9-jgu"/>
+                                    <constraint firstAttribute="bottom" secondItem="b4v-1Z-caS" secondAttribute="bottom" id="dfR-Gc-2DQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="upp-3H-ANT" secondAttribute="trailing" id="l7T-YQ-23X"/>
+                                    <constraint firstAttribute="trailing" secondItem="b4v-1Z-caS" secondAttribute="trailing" id="mY6-yk-us8"/>
+                                    <constraint firstItem="upp-3H-ANT" firstAttribute="leading" secondItem="AXt-9w-FvE" secondAttribute="leading" id="p1J-7G-tig"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AXt-9w-FvE" secondAttribute="bottom" constant="20" id="3mI-No-ckk"/>
+                            <constraint firstItem="AXt-9w-FvE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="clh-OT-4FC" secondAttribute="top" constant="20" id="4mP-Hl-ewk"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AXt-9w-FvE" secondAttribute="trailing" constant="20" id="ZBO-Rh-ZOR"/>
+                            <constraint firstItem="AXt-9w-FvE" firstAttribute="centerY" secondItem="clh-OT-4FC" secondAttribute="centerY" id="eAG-1U-b0q"/>
+                            <constraint firstItem="AXt-9w-FvE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="clh-OT-4FC" secondAttribute="leading" constant="20" id="gVv-Kw-ZgN"/>
+                            <constraint firstItem="AXt-9w-FvE" firstAttribute="centerX" secondItem="clh-OT-4FC" secondAttribute="centerX" id="svQ-zS-kqZ"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                    <connections>
+                        <outlet property="header" destination="upp-3H-ANT" id="zP1-Fe-jwT"/>
+                        <outlet property="subheader" destination="b4v-1Z-caS" id="bHg-Ut-bi5"/>
+                    </connections>
+                </visualEffectView>
+            </objects>
+            <point key="canvasLocation" x="1944.8" y="-580.65967016491754"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O0h-X1-ye7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xsb-8h-4UX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qpW-JE-xga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="zmz-o9-HP8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhR-Kv-F46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="-580.65967016491754"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

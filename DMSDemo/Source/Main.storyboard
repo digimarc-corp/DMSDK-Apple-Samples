@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EdG-6W-TfV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TAX-hb-noQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EdG-6W-TfV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgA-Qm-zZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dW3-f5-quH" kind="relationship" relationship="rootViewController" id="NfG-Yg-s12"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5g-Sq-JSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="514"/>
+        </scene>
+        <!--DMS Demo-->
+        <scene sceneID="XWs-xQ-82F">
+            <objects>
+                <viewController id="dW3-f5-quH" customClass="ScannerViewController" customModule="DMSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="98o-ff-8C2"/>
+                        <viewControllerLayoutGuide type="bottom" id="kjs-fM-hkb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5NO-ul-D6E" customClass="VideoPreviewLayerView" customModule="DMSDemo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-fS-P7d" customClass="MicrophoneView" customModule="DMSDemo" customModuleProvider="target">
+                                <rect key="frame" x="315" y="607" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" placeholder="YES" id="IZK-Hj-yb9"/>
+                                    <constraint firstAttribute="width" constant="60" placeholder="YES" id="JCl-y5-uLm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kjs-fM-hkb" firstAttribute="top" secondItem="hLk-fS-P7d" secondAttribute="bottom" id="L14-Cl-Wbw"/>
+                            <constraint firstAttribute="trailing" secondItem="hLk-fS-P7d" secondAttribute="trailing" id="iI4-Tu-R7o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DMS Demo" id="SYh-Ls-5ry"/>
+                    <connections>
+                        <outlet property="previewView" destination="5NO-ul-D6E" id="7L9-26-Llo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuk-eU-EvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="513"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
