@@ -17,7 +17,7 @@
 		A2128CB5283D85D5001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CB4283D85D5001F176A /* DMSDK */; };
 		A226C58C21A48CFD004B0311 /* PayloadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58B21A48CFD004B0311 /* PayloadNode.swift */; };
 		A226C58E21A494AC004B0311 /* NodeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58D21A494AC004B0311 /* NodeUtilities.swift */; };
-		A2BB7EE22370C5A50098D00C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EE12370C5A40098D00C /* Readme.md */; };
+		A2BB7EE22370C5A50098D00C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EE12370C5A40098D00C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		93FBC2ED21A608EA00704CBF /* PlaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
 		A226C58B21A48CFD004B0311 /* PayloadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadNode.swift; sourceTree = "<group>"; };
 		A226C58D21A494AC004B0311 /* NodeUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeUtilities.swift; sourceTree = "<group>"; };
-		A2BB7EE12370C5A40098D00C /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		A2BB7EE12370C5A40098D00C /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
 		E40A85A520F3AFE800904CD0 /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 		E40A859C20F3AFE800904CD0 = {
 			isa = PBXGroup;
 			children = (
-				A2BB7EE12370C5A40098D00C /* Readme.md */,
+				A2BB7EE12370C5A40098D00C /* README.md */,
 				93AC427721921D8E0088B233 /* ARDemo */,
 				E40A85A620F3AFE800904CD0 /* Products */,
 			);
@@ -162,7 +162,7 @@
 			files = (
 				93AC428621921D8E0088B233 /* Main.storyboard in Resources */,
 				93AC428321921D8E0088B233 /* Assets.xcassets in Resources */,
-				A2BB7EE22370C5A50098D00C /* Readme.md in Resources */,
+				A2BB7EE22370C5A50098D00C /* README.md in Resources */,
 				93AC428521921D8E0088B233 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
