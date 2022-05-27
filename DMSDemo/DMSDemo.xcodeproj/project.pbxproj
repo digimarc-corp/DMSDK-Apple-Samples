@@ -10,10 +10,7 @@
 		082A43F51ECCB33F009E71BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87524E6D17A73D8500A14D9B /* AppDelegate.swift */; };
 		08AEB7A61F2956B000C9105B /* MicrophoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AEB7A51F2956B000C9105B /* MicrophoneView.swift */; };
 		08D7AC891EC4C78E00826B94 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D7AC881EC4C78E00826B94 /* ScannerViewController.swift */; };
-		87524E5F17A73D8500A14D9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87524E5E17A73D8500A14D9B /* UIKit.framework */; };
-		87524E6117A73D8500A14D9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87524E6017A73D8500A14D9B /* Foundation.framework */; };
 		87524E6917A73D8500A14D9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87524E6717A73D8500A14D9B /* InfoPlist.strings */; };
-		8777E54617A86A4D00A74EC3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8777E54517A86A4D00A74EC3 /* AVFoundation.framework */; };
 		93411B7F1CFF47F2000A7141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93411B7E1CFF47F2000A7141 /* Main.storyboard */; };
 		935B26941CFE52A6008F146C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B26931CFE52A6008F146C /* Launch Screen.storyboard */; };
 		935B26961CFE53ED008F146C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935B26951CFE53ED008F146C /* Images.xcassets */; };
@@ -38,12 +35,9 @@
 		08AEB7A51F2956B000C9105B /* MicrophoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneView.swift; sourceTree = "<group>"; };
 		08D7AC881EC4C78E00826B94 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		87524E5B17A73D8500A14D9B /* DMSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		87524E5E17A73D8500A14D9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		87524E6017A73D8500A14D9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87524E6617A73D8500A14D9B /* DMSDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMSDemo-Info.plist"; sourceTree = "<group>"; };
 		87524E6817A73D8500A14D9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87524E6D17A73D8500A14D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8777E54517A86A4D00A74EC3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		93411B7E1CFF47F2000A7141 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		935B26931CFE52A6008F146C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		935B26951CFE53ED008F146C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,9 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2128CBB283D85FF001F176A /* DMSDK in Frameworks */,
-				8777E54617A86A4D00A74EC3 /* AVFoundation.framework in Frameworks */,
-				87524E6117A73D8500A14D9B /* Foundation.framework in Frameworks */,
-				87524E5F17A73D8500A14D9B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +61,6 @@
 			children = (
 				A2BB7EDB236CF2330098D00C /* README.md */,
 				87524E6417A73D8500A14D9B /* Source */,
-				87524E5D17A73D8500A14D9B /* Frameworks */,
 				87524E5C17A73D8500A14D9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,16 +71,6 @@
 				87524E5B17A73D8500A14D9B /* DMSDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		87524E5D17A73D8500A14D9B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8777E54517A86A4D00A74EC3 /* AVFoundation.framework */,
-				87524E6017A73D8500A14D9B /* Foundation.framework */,
-				87524E5E17A73D8500A14D9B /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		87524E6417A73D8500A14D9B /* Source */ = {
