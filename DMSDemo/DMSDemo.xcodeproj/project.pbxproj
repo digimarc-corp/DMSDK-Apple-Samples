@@ -405,8 +405,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
