@@ -16,23 +16,13 @@
 		08D7AC861EC251FD00826B94 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D7AC851EC251FD00826B94 /* ScannerViewController.swift */; };
 		08E270EC1EB3AEE0003E6E2F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E270EB1EB3AEE0003E6E2F /* ContainerViewController.swift */; };
 		93142D8720F012B900E6209E /* DetectionLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93142D8620F012B900E6209E /* DetectionLocationViewController.swift */; };
-		93840C222347AD9200D20685 /* DMSDK.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93840C212347AD9100D20685 /* DMSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		93D5968F2322B10300034AD8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D5968E2322B10300034AD8 /* Launch Screen.storyboard */; };
-		A203E15225153C47004387DF /* DMSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93840C212347AD9100D20685 /* DMSDK.xcframework */; };
+		A2128CBE283D860C001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CBD283D860C001F176A /* DMSDK */; };
+		A2128CC0283D9483001F176A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2128CBF283D9483001F176A /* README.md */; };
 		A26D33E9267AA0780050126B /* RegionOfInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26D33E7267AA0780050126B /* RegionOfInterestViewController.swift */; };
 		A26D33EA267AA0780050126B /* RegionOfInterestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26D33E8267AA0780050126B /* RegionOfInterestViewController.xib */; };
-		A2AE2AAA1BB4990F00E0D715 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE2AA91BB4990F00E0D715 /* QuartzCore.framework */; };
-		A2AE2AAC1BB4992200E0D715 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE2AAB1BB4992200E0D715 /* UIKit.framework */; };
-		A2AE2AAE1BB4993700E0D715 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE2AAD1BB4993700E0D715 /* CoreGraphics.framework */; };
-		A2AE2AB01BB4994500E0D715 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE2AAF1BB4994500E0D715 /* CoreVideo.framework */; };
-		A2AE2AB21BB4996200E0D715 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE2AB11BB4996200E0D715 /* CoreImage.framework */; };
 		A2E07F2E1AF3FF510089EF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E07F2C1AF3FF510089EF0E /* Main.storyboard */; };
 		A2E07F301AF3FF510089EF0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E07F2F1AF3FF510089EF0E /* Images.xcassets */; };
-		A2E07F581AF4018A0089EF0E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E07F541AF4018A0089EF0E /* Accelerate.framework */; };
-		A2E07F591AF4018A0089EF0E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E07F551AF4018A0089EF0E /* AudioToolbox.framework */; };
-		A2E07F5A1AF4018A0089EF0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E07F561AF4018A0089EF0E /* AVFoundation.framework */; };
-		A2E07F5B1AF4018A0089EF0E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E07F571AF4018A0089EF0E /* CoreMedia.framework */; };
-		A2E07F5D1AF401A50089EF0E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E07F5C1AF401A50089EF0E /* libiconv.dylib */; };
 		A2E07F611AF408F50089EF0E /* DigimarcSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E07F601AF408F50089EF0E /* DigimarcSDK.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				93840C222347AD9200D20685 /* DMSDK.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,26 +48,14 @@
 		08D7AC851EC251FD00826B94 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		08E270EB1EB3AEE0003E6E2F /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		93142D8620F012B900E6209E /* DetectionLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionLocationViewController.swift; sourceTree = "<group>"; };
-		93840C212347AD9100D20685 /* DMSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DMSDK.xcframework; path = ../../DMSDK.xcframework; sourceTree = "<group>"; };
 		93D5968E2322B10300034AD8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		A26626A51D303F7000A1F4B7 /* DMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DMSDK.framework; path = ../../../DMSDK.framework; sourceTree = "<group>"; };
+		A2128CBF283D9483001F176A /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
 		A26D33E7267AA0780050126B /* RegionOfInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionOfInterestViewController.swift; sourceTree = "<group>"; };
 		A26D33E8267AA0780050126B /* RegionOfInterestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionOfInterestViewController.xib; sourceTree = "<group>"; };
-		A2AE2AA91BB4990F00E0D715 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A2AE2AAB1BB4992200E0D715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A2AE2AAD1BB4993700E0D715 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A2AE2AAF1BB4994500E0D715 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		A2AE2AB11BB4996200E0D715 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		A2AE2AB31BB4997100E0D715 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A2E07F241AF3FF510089EF0E /* DigimarcVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigimarcVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E07F271AF3FF510089EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2E07F2D1AF3FF510089EF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2E07F2F1AF3FF510089EF0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A2E07F541AF4018A0089EF0E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		A2E07F551AF4018A0089EF0E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A2E07F561AF4018A0089EF0E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A2E07F571AF4018A0089EF0E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		A2E07F5C1AF401A50089EF0E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		A2E07F601AF408F50089EF0E /* DigimarcSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DigimarcSDK.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,17 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A203E15225153C47004387DF /* DMSDK.xcframework in Frameworks */,
-				A2AE2AB21BB4996200E0D715 /* CoreImage.framework in Frameworks */,
-				A2AE2AB01BB4994500E0D715 /* CoreVideo.framework in Frameworks */,
-				A2AE2AAE1BB4993700E0D715 /* CoreGraphics.framework in Frameworks */,
-				A2AE2AAC1BB4992200E0D715 /* UIKit.framework in Frameworks */,
-				A2AE2AAA1BB4990F00E0D715 /* QuartzCore.framework in Frameworks */,
-				A2E07F5D1AF401A50089EF0E /* libiconv.dylib in Frameworks */,
-				A2E07F581AF4018A0089EF0E /* Accelerate.framework in Frameworks */,
-				A2E07F591AF4018A0089EF0E /* AudioToolbox.framework in Frameworks */,
-				A2E07F5A1AF4018A0089EF0E /* AVFoundation.framework in Frameworks */,
-				A2E07F5B1AF4018A0089EF0E /* CoreMedia.framework in Frameworks */,
+				A2128CBE283D860C001F176A /* DMSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,32 +84,11 @@
 			name = "Custom UI Example";
 			sourceTree = "<group>";
 		};
-		08CA669A1EA0197B00563CFD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2E07F5C1AF401A50089EF0E /* libiconv.dylib */,
-				A26626A51D303F7000A1F4B7 /* DMSDK.framework */,
-				A2E07F541AF4018A0089EF0E /* Accelerate.framework */,
-				A2E07F551AF4018A0089EF0E /* AudioToolbox.framework */,
-				A2E07F561AF4018A0089EF0E /* AVFoundation.framework */,
-				A2E07F571AF4018A0089EF0E /* CoreMedia.framework */,
-				A2AE2AB31BB4997100E0D715 /* OpenGLES.framework */,
-				A2AE2AB11BB4996200E0D715 /* CoreImage.framework */,
-				A2AE2AAF1BB4994500E0D715 /* CoreVideo.framework */,
-				A2AE2AAD1BB4993700E0D715 /* CoreGraphics.framework */,
-				A2AE2AAB1BB4992200E0D715 /* UIKit.framework */,
-				A2AE2AA91BB4990F00E0D715 /* QuartzCore.framework */,
-			);
-			name = Frameworks;
-			path = "Drop-In View Controller";
-			sourceTree = "<group>";
-		};
 		A20F2D371AE709A0003B0BEB = {
 			isa = PBXGroup;
 			children = (
-				93840C212347AD9100D20685 /* DMSDK.xcframework */,
+				A2128CBF283D9483001F176A /* README.md */,
 				A2E07F251AF3FF510089EF0E /* Source */,
-				08CA669A1EA0197B00563CFD /* Frameworks */,
 				A20F2D411AE709A0003B0BEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -207,6 +153,9 @@
 			dependencies = (
 			);
 			name = DigimarcVC;
+			packageProductDependencies = (
+				A2128CBD283D860C001F176A /* DMSDK */,
+			);
 			productName = DISTestApp;
 			productReference = A2E07F241AF3FF510089EF0E /* DigimarcVC.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +185,9 @@
 				Base,
 			);
 			mainGroup = A20F2D371AE709A0003B0BEB;
+			packageReferences = (
+				A2128CBC283D860C001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
+			);
 			productRefGroup = A20F2D411AE709A0003B0BEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +205,7 @@
 				A2E07F2E1AF3FF510089EF0E /* Main.storyboard in Resources */,
 				A2E07F611AF408F50089EF0E /* DigimarcSDK.xcassets in Resources */,
 				08153E841EB3B16000A6416B /* CustomUIExample.storyboard in Resources */,
+				A2128CC0283D9483001F176A /* README.md in Resources */,
 				93D5968F2322B10300034AD8 /* Launch Screen.storyboard in Resources */,
 				A2E07F301AF3FF510089EF0E /* Images.xcassets in Resources */,
 				A26D33EA267AA0780050126B /* RegionOfInterestViewController.xib in Resources */,
@@ -492,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2128CBC283D860C001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
+			requirement = {
+				kind = exactVersion;
+				version = "3.5.1-beta1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2128CBD283D860C001F176A /* DMSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2128CBC283D860C001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
+			productName = DMSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A20F2D381AE709A0003B0BEB /* Project object */;
 }

@@ -14,32 +14,17 @@
 		9350E6DE2502BE7E0092A325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350E6DD2502BE7E0092A325 /* ViewController.swift */; };
 		9350E6E32502BE800092A325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9350E6E22502BE800092A325 /* Assets.xcassets */; };
 		9350E6E62502BE800092A325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9350E6E42502BE800092A325 /* LaunchScreen.storyboard */; };
-		9350E7032502C8220092A325 /* DMSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9350E7012502C7CC0092A325 /* DMSDK.xcframework */; };
-		9350E7042502C8220092A325 /* DMSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9350E7012502C7CC0092A325 /* DMSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9350E7062502C8DC0092A325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9350E6FE2502C2160092A325 /* Main.storyboard */; };
+		A2128CB8283D85F0001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CB7283D85F0001F176A /* DMSDK */; };
 		A2802977254B3B3800ECEE20 /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802976254B3B3800ECEE20 /* Tracking.swift */; };
 		A2802992254B729400ECEE20 /* PayloadPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802991254B729300ECEE20 /* PayloadPublisher.swift */; };
 		A280299D2550AF0E00ECEE20 /* DetectionRegionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280299C2550AF0E00ECEE20 /* DetectionRegionLayer.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9350E7052502C8220092A325 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9350E7042502C8220092A325 /* DMSDK.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		932B8132255619E600DEED45 /* Smoothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smoothing.swift; sourceTree = "<group>"; };
 		9330F09B2808C3F600C2C27C /* RegionOverlayLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionOverlayLayer.swift; sourceTree = "<group>"; };
-		93377B0E25FAF984000EAA28 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
+		93377B0E25FAF984000EAA28 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		9350E6D62502BE7E0092A325 /* DM Stock Take.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DM Stock Take.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350E6D92502BE7E0092A325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9350E6DD2502BE7E0092A325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9350E7032502C8220092A325 /* DMSDK.xcframework in Frameworks */,
+				A2128CB8283D85F0001F176A /* DMSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,13 +104,15 @@
 				9350E6D22502BE7E0092A325 /* Sources */,
 				9350E6D32502BE7E0092A325 /* Frameworks */,
 				9350E6D42502BE7E0092A325 /* Resources */,
-				9350E7052502C8220092A325 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "DM Stock Take";
+			packageProductDependencies = (
+				A2128CB7283D85F0001F176A /* DMSDK */,
+			);
 			productName = "DM Stock Take";
 			productReference = 9350E6D62502BE7E0092A325 /* DM Stock Take.app */;
 			productType = "com.apple.product-type.application";
@@ -154,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 9350E6CD2502BE7E0092A325;
+			packageReferences = (
+				A2128CB6283D85F0001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
+			);
 			productRefGroup = 9350E6D72502BE7E0092A325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -387,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2128CB6283D85F0001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
+			requirement = {
+				kind = exactVersion;
+				version = "3.5.1-beta1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2128CB7283D85F0001F176A /* DMSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2128CB6283D85F0001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
+			productName = DMSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9350E6CE2502BE7E0092A325 /* Project object */;
 }
