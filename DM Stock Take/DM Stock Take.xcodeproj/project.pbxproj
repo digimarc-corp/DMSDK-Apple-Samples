@@ -32,7 +32,6 @@
 		9350E6E52502BE800092A325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9350E6E72502BE800092A325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9350E6FE2502C2160092A325 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9350E7012502C7CC0092A325 /* DMSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DMSDK.xcframework; path = ../../../DMSDK.xcframework; sourceTree = "<group>"; };
 		A2802976254B3B3800ECEE20 /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
 		A2802991254B729300ECEE20 /* PayloadPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadPublisher.swift; sourceTree = "<group>"; };
 		A280299C2550AF0E00ECEE20 /* DetectionRegionLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionRegionLayer.swift; sourceTree = "<group>"; };
@@ -89,7 +88,6 @@
 				9350E6E22502BE800092A325 /* Assets.xcassets */,
 				9350E6E42502BE800092A325 /* LaunchScreen.storyboard */,
 				9350E6E72502BE800092A325 /* Info.plist */,
-				9350E7012502C7CC0092A325 /* DMSDK.xcframework */,
 			);
 			path = "DM Stock Take";
 			sourceTree = "<group>";
