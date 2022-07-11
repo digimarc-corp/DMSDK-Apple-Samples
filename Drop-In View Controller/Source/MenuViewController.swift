@@ -10,10 +10,9 @@ import DMSDK
 
 class MenuViewController: UIViewController, DetectorViewControllerDelegate
 {
-
     var reenableDetectionWhenAppResumes: Bool = false;
     var options: [ReaderOptionKey: Any] = [:]
-    weak var currentViewController: DetectorViewController?;
+    weak var currentViewController: DetectorViewController?
     
     // MARK: - View Controller Lifespan
     
@@ -22,7 +21,7 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForeground(notification:)), name: UIApplication.willEnterForegroundNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillResignActive(notification:)),    name: UIApplication.willResignActiveNotification,    object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillResignActive(notification:)), name: UIApplication.willResignActiveNotification, object: nil)
     }
     
     deinit
@@ -91,7 +90,7 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
     
     @IBAction func showDetectionLocationViewControllerAsNavigation(_ sender: Any)
     {
-        let viewController = DetectionLocationViewController(nibName: nil, bundle: nil)
+        let viewController = DetectorViewController(nibName: nil, bundle: nil)
         
         // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
         //              Alternatively, you may also use .allImage and .allAudio.
@@ -99,6 +98,15 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
         viewController.delegate = self
         viewController.automaticallyUpdatesRectOfInterest = true
+        
+        // Enabling & customizing how the image detection location style overlays
+        // are displayed over the preview.
+        let imageDetectionLocationStyle = ImageDetectionLocationStyle()
+        imageDetectionLocationStyle.borderColor = UIColor.red
+        imageDetectionLocationStyle.fillColor = UIColor.red.withAlphaComponent(0.6)
+        imageDetectionLocationStyle.borderWidth = 2.0
+        viewController.showImageDetectionLocation = true
+        viewController.imageDetectionLocationStyle = imageDetectionLocationStyle
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
@@ -140,6 +148,17 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
     }
 
     // MARK: - SDK Delegate Methods
+    
+    func detectorViewController(_ viewController: DetectorViewController, shouldResolvePayloadsFor result: ReaderResult) -> [Payload]?
+    {
+        //  If `showsImageDetectionLocation` is enabled, resolving is disabled
+        //  to showcase the image detection location on screen.
+        if  viewController.showImageDetectionLocation
+        {
+            return nil
+        }
+        return result.payloads
+    }
 
     public func detectorViewController(_ viewController: DetectorViewController, resolvedContent: ResolvedContent, for payload: Payload)
     {

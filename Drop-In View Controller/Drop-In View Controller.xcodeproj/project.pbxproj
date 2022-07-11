@@ -15,7 +15,6 @@
 		08CA669C1EA01F9A00563CFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA669B1EA01F9A00563CFD /* MenuViewController.swift */; };
 		08D7AC861EC251FD00826B94 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D7AC851EC251FD00826B94 /* ScannerViewController.swift */; };
 		08E270EC1EB3AEE0003E6E2F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E270EB1EB3AEE0003E6E2F /* ContainerViewController.swift */; };
-		93142D8720F012B900E6209E /* DetectionLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93142D8620F012B900E6209E /* DetectionLocationViewController.swift */; };
 		93D5968F2322B10300034AD8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D5968E2322B10300034AD8 /* Launch Screen.storyboard */; };
 		A2128CBE283D860C001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CBD283D860C001F176A /* DMSDK */; };
 		A2128CC0283D9483001F176A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2128CBF283D9483001F176A /* README.md */; };
@@ -47,7 +46,6 @@
 		08CA669B1EA01F9A00563CFD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		08D7AC851EC251FD00826B94 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		08E270EB1EB3AEE0003E6E2F /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		93142D8620F012B900E6209E /* DetectionLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionLocationViewController.swift; sourceTree = "<group>"; };
 		93D5968E2322B10300034AD8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A2128CBF283D9483001F176A /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
 		A26D33E7267AA0780050126B /* RegionOfInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionOfInterestViewController.swift; sourceTree = "<group>"; };
@@ -101,14 +99,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A26D33E4267AA0210050126B /* Visualizing Detection Results */ = {
-			isa = PBXGroup;
-			children = (
-				93142D8620F012B900E6209E /* DetectionLocationViewController.swift */,
-			);
-			path = "Visualizing Detection Results";
-			sourceTree = "<group>";
-		};
 		A26D33E6267AA0480050126B /* Controlling Detection Area */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				A26D33E6267AA0480050126B /* Controlling Detection Area */,
-				A26D33E4267AA0210050126B /* Visualizing Detection Results */,
 				93D5968E2322B10300034AD8 /* Launch Screen.storyboard */,
 				A2E07F2C1AF3FF510089EF0E /* Main.storyboard */,
 				08CA669B1EA01F9A00563CFD /* MenuViewController.swift */,
@@ -238,7 +227,6 @@
 				08153E891EB796D800A6416B /* MultimodalProcessor.swift in Sources */,
 				08E270EC1EB3AEE0003E6E2F /* ContainerViewController.swift in Sources */,
 				08153E8B1EBA56A500A6416B /* ResultTableViewCell.swift in Sources */,
-				93142D8720F012B900E6209E /* DetectionLocationViewController.swift in Sources */,
 				08CA66991EA0189D00563CFD /* AppDelegate.swift in Sources */,
 				A26D33E9267AA0780050126B /* RegionOfInterestViewController.swift in Sources */,
 				08CA669C1EA01F9A00563CFD /* MenuViewController.swift in Sources */,
@@ -452,7 +440,7 @@
 			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.5.1-beta1";
+				version = "3.5.1-beta4";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
