@@ -14,9 +14,9 @@
 		93AC428621921D8E0088B233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC427D21921D8E0088B233 /* Main.storyboard */; };
 		93AC428821921D8E0088B233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC428021921D8E0088B233 /* AppDelegate.swift */; };
 		93FBC2EE21A608EA00704CBF /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBC2ED21A608EA00704CBF /* PlaneNode.swift */; };
-		A2128CB5283D85D5001F176A /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A2128CB4283D85D5001F176A /* DMSDK */; };
 		A226C58C21A48CFD004B0311 /* PayloadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58B21A48CFD004B0311 /* PayloadNode.swift */; };
 		A226C58E21A494AC004B0311 /* NodeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58D21A494AC004B0311 /* NodeUtilities.swift */; };
+		A28746C028B7F3B6003A5B92 /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A28746BF28B7F3B6003A5B92 /* DMSDK */; };
 		A2BB7EE22370C5A50098D00C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EE12370C5A40098D00C /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2128CB5283D85D5001F176A /* DMSDK in Frameworks */,
+				A28746C028B7F3B6003A5B92 /* DMSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 			);
 			name = ARDemo;
 			packageProductDependencies = (
-				A2128CB4283D85D5001F176A /* DMSDK */,
+				A28746BF28B7F3B6003A5B92 /* DMSDK */,
 			);
 			productName = DemoApp;
 			productReference = E40A85A520F3AFE800904CD0 /* ARDemo.app */;
@@ -144,7 +144,7 @@
 			);
 			mainGroup = E40A859C20F3AFE800904CD0;
 			packageReferences = (
-				A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
+				A28746BE28B7F3B6003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
 			);
 			productRefGroup = E40A85A620F3AFE800904CD0 /* Products */;
 			projectDirPath = "";
@@ -397,20 +397,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
+		A28746BE28B7F3B6003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
 			requirement = {
-				kind = exactVersion;
-				version = "3.5.1-beta1";
+				branch = "3.5.1-beta4";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A2128CB4283D85D5001F176A /* DMSDK */ = {
+		A28746BF28B7F3B6003A5B92 /* DMSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A2128CB3283D85D5001F176A /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
+			package = A28746BE28B7F3B6003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
 			productName = DMSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

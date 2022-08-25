@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dmsdk-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:digimarc-corp/DMSDK-Apple.git",
+      "state" : {
+        "branch" : "3.5.1-beta4",
+        "revision" : "6cfa26449da86e13cc71ca6e6807d1ca47c1a46c"
+      }
+    }
+  ],
+  "version" : 2
+}

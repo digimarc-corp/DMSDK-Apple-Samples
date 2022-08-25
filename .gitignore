@@ -7,7 +7,7 @@
 *.mode2v3
 *.perspectivev3
 *.xcuserstate
-*.xcworkspace/
+*/*.xcworkspace/
 project.xcworkspace/
 xcuserdata/
 
