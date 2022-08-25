@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "dmsdk-apple",
+      "identity" : "dmsdk-apple-binary-packages",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:digimarc-corp/DMSDK-Apple.git",
+      "location" : "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git",
       "state" : {
-        "branch" : "3.5.1-beta4",
-        "revision" : "6cfa26449da86e13cc71ca6e6807d1ca47c1a46c"
+        "revision" : "d7ed34cfe2984947ba024832aeaacae82c95d04b",
+        "version" : "3.6.0-beta1"
       }
     }
   ],

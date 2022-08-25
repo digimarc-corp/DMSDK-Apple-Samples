@@ -14,7 +14,7 @@
 		93411B7F1CFF47F2000A7141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93411B7E1CFF47F2000A7141 /* Main.storyboard */; };
 		935B26941CFE52A6008F146C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B26931CFE52A6008F146C /* Launch Screen.storyboard */; };
 		935B26961CFE53ED008F146C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935B26951CFE53ED008F146C /* Images.xcassets */; };
-		A28746BA28B7F384003A5B92 /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A28746B928B7F384003A5B92 /* DMSDK */; };
+		93DC360E28B7F6BA00F6FFA5 /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 93DC360D28B7F6BA00F6FFA5 /* DMSDK */; };
 		A2BB7EDC236CF2330098D00C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EDB236CF2330098D00C /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28746BA28B7F384003A5B92 /* DMSDK in Frameworks */,
+				93DC360E28B7F6BA00F6FFA5 /* DMSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			);
 			name = DMSDemo;
 			packageProductDependencies = (
-				A28746B928B7F384003A5B92 /* DMSDK */,
+				93DC360D28B7F6BA00F6FFA5 /* DMSDK */,
 			);
 			productName = DMICP_HistoryDemo;
 			productReference = 87524E5B17A73D8500A14D9B /* DMSDemo.app */;
@@ -146,7 +146,7 @@
 			);
 			mainGroup = 87524E5217A73D8500A14D9B;
 			packageReferences = (
-				A28746B828B7F383003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */,
+				93DC360C28B7F6BA00F6FFA5 /* XCRemoteSwiftPackageReference "dmsdk-apple-binary-packages" */,
 			);
 			productRefGroup = 87524E5C17A73D8500A14D9B /* Products */;
 			projectDirPath = "";
@@ -401,20 +401,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A28746B828B7F383003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */ = {
+		93DC360C28B7F6BA00F6FFA5 /* XCRemoteSwiftPackageReference "dmsdk-apple-binary-packages" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:digimarc-corp/DMSDK-Apple.git";
+			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
-				branch = "3.5.1-beta4";
-				kind = branch;
+				kind = exactVersion;
+				version = "3.6.0-beta1";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A28746B928B7F384003A5B92 /* DMSDK */ = {
+		93DC360D28B7F6BA00F6FFA5 /* DMSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A28746B828B7F383003A5B92 /* XCRemoteSwiftPackageReference "DMSDK-Apple" */;
+			package = 93DC360C28B7F6BA00F6FFA5 /* XCRemoteSwiftPackageReference "dmsdk-apple-binary-packages" */;
 			productName = DMSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
