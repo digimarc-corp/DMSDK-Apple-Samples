@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		932B8133255619E600DEED45 /* Smoothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B8132255619E600DEED45 /* Smoothing.swift */; };
 		9330F09C2808C3F600C2C27C /* RegionOverlayLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330F09B2808C3F600C2C27C /* RegionOverlayLayer.swift */; };
-		93377B1025FAFA40000EAA28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 93377B0E25FAF984000EAA28 /* README.md */; };
 		9350E6DA2502BE7E0092A325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350E6D92502BE7E0092A325 /* AppDelegate.swift */; };
 		9350E6DE2502BE7E0092A325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350E6DD2502BE7E0092A325 /* ViewController.swift */; };
 		9350E6E32502BE800092A325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9350E6E22502BE800092A325 /* Assets.xcassets */; };
@@ -158,7 +157,6 @@
 			files = (
 				9350E7062502C8DC0092A325 /* Main.storyboard in Resources */,
 				9350E6E62502BE800092A325 /* LaunchScreen.storyboard in Resources */,
-				93377B1025FAFA40000EAA28 /* README.md in Resources */,
 				9350E6E32502BE800092A325 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +380,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta1";
+				version = "3.6.0-beta2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -15,7 +15,6 @@
 		935B26941CFE52A6008F146C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B26931CFE52A6008F146C /* Launch Screen.storyboard */; };
 		935B26961CFE53ED008F146C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935B26951CFE53ED008F146C /* Images.xcassets */; };
 		93DC360E28B7F6BA00F6FFA5 /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 93DC360D28B7F6BA00F6FFA5 /* DMSDK */; };
-		A2BB7EDC236CF2330098D00C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EDB236CF2330098D00C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,7 +163,6 @@
 			files = (
 				87524E6917A73D8500A14D9B /* InfoPlist.strings in Resources */,
 				93411B7F1CFF47F2000A7141 /* Main.storyboard in Resources */,
-				A2BB7EDC236CF2330098D00C /* README.md in Resources */,
 				935B26961CFE53ED008F146C /* Images.xcassets in Resources */,
 				935B26941CFE52A6008F146C /* Launch Screen.storyboard in Resources */,
 			);
@@ -406,7 +404,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta1";
+				version = "3.6.0-beta2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

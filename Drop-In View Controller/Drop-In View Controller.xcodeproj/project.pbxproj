@@ -17,7 +17,6 @@
 		08E270EC1EB3AEE0003E6E2F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E270EB1EB3AEE0003E6E2F /* ContainerViewController.swift */; };
 		93D5968F2322B10300034AD8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D5968E2322B10300034AD8 /* Launch Screen.storyboard */; };
 		93DC361128B7F6D800F6FFA5 /* DMSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 93DC361028B7F6D800F6FFA5 /* DMSDK */; };
-		A2128CC0283D9483001F176A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2128CBF283D9483001F176A /* README.md */; };
 		A26D33E9267AA0780050126B /* RegionOfInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26D33E7267AA0780050126B /* RegionOfInterestViewController.swift */; };
 		A26D33EA267AA0780050126B /* RegionOfInterestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26D33E8267AA0780050126B /* RegionOfInterestViewController.xib */; };
 		A2E07F2E1AF3FF510089EF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E07F2C1AF3FF510089EF0E /* Main.storyboard */; };
@@ -194,7 +193,6 @@
 				A2E07F2E1AF3FF510089EF0E /* Main.storyboard in Resources */,
 				A2E07F611AF408F50089EF0E /* DigimarcSDK.xcassets in Resources */,
 				08153E841EB3B16000A6416B /* CustomUIExample.storyboard in Resources */,
-				A2128CC0283D9483001F176A /* README.md in Resources */,
 				93D5968F2322B10300034AD8 /* Launch Screen.storyboard in Resources */,
 				A2E07F301AF3FF510089EF0E /* Images.xcassets in Resources */,
 				A26D33EA267AA0780050126B /* RegionOfInterestViewController.xib in Resources */,
@@ -440,7 +438,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta1";
+				version = "3.6.0-beta2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

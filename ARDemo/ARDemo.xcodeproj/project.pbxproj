@@ -17,7 +17,6 @@
 		93FBC2EE21A608EA00704CBF /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBC2ED21A608EA00704CBF /* PlaneNode.swift */; };
 		A226C58C21A48CFD004B0311 /* PayloadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58B21A48CFD004B0311 /* PayloadNode.swift */; };
 		A226C58E21A494AC004B0311 /* NodeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226C58D21A494AC004B0311 /* NodeUtilities.swift */; };
-		A2BB7EE22370C5A50098D00C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2BB7EE12370C5A40098D00C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,7 +161,6 @@
 			files = (
 				93AC428621921D8E0088B233 /* Main.storyboard in Resources */,
 				93AC428321921D8E0088B233 /* Assets.xcassets in Resources */,
-				A2BB7EE22370C5A50098D00C /* README.md in Resources */,
 				93AC428521921D8E0088B233 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +400,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta1";
+				version = "3.6.0-beta2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
