@@ -67,7 +67,11 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
         //              Alternatively, you may also use .allImage and .allAudio.
     
-        try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        do {
+            try viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
         viewController.delegate = self
         viewController.automaticallyUpdatesRectOfInterest = true
     
@@ -81,7 +85,11 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
         //              Alternatively, you may also use .allImage and .allAudio.
         
-        try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        do {
+            try viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
         viewController.delegate = self
         viewController.automaticallyUpdatesRectOfInterest = true
 
@@ -95,7 +103,11 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
         //              Alternatively, you may also use .allImage and .allAudio.
         
-        try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        do {
+            try viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
         viewController.delegate = self
         viewController.automaticallyUpdatesRectOfInterest = true
         
@@ -118,7 +130,12 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
         // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
         //              Alternatively, you may also use .allImage and .allAudio.
         
-        try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        do {
+            try viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+        
         viewController.delegate = self
         
         self.navigationController?.pushViewController(viewController, animated: true)
@@ -132,8 +149,11 @@ class MenuViewController: UIViewController, DetectorViewControllerDelegate
     
             // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
             //              Alternatively, you may also use .allImage and .allAudio.
-        
-            try? viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+            do {
+                try viewController.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: self.options)
+            } catch {
+                fatalError(error.localizedDescription)
+            }
             viewController.delegate = self
             viewController.automaticallyUpdatesRectOfInterest = true
         }

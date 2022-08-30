@@ -23,7 +23,12 @@ class ContainerViewController: UIViewController, DetectorViewControllerDelegate,
             // * IMPORTANT: Set desired symbologies for video and audio readers. You may remove any symbologies you don't need to use.
             //              Alternatively, you may also use .allImage and .allAudio.
             
-            try? self.scannerViewController?.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: [:])
+            do {
+                try self.scannerViewController?.setSymbologies([.imageDigimarc, .audioDigimarc, .UPCA, .UPCE, .EAN13, .EAN8, .dataBar, .qrCode, .code39, .code128, .ITF, .ITFGTIN14 ], options: [:])
+            } catch {
+                fatalError(error.localizedDescription)
+            }
+            
             self.scannerViewController?.delegate = self
             self.scannerViewController?.automaticallyUpdatesRectOfInterest = true
         }
