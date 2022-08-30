@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git",
       "state" : {
-        "revision" : "e64d9a95ba0d1e0088aa92226306ef918cada7d6",
-        "version" : "3.6.0-beta2"
+        "revision" : "5ed3c5e378aa14c3bb3162c31a8c35ee18708bd8",
+        "version" : "3.6.0-beta3"
       }
     }
   ],

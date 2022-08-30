@@ -313,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3JZ8T294M7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "DM Stock Take/Info.plist";
@@ -322,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarc.DM-Stock-Take";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -335,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3JZ8T294M7;
 				INFOPLIST_FILE = "DM Stock Take/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -343,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarc.DM-Stock-Take";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -380,7 +380,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta2";
+				version = "3.6.0-beta3";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

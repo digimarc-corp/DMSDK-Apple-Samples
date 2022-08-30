@@ -363,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3JZ8T294M7;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -376,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digimarc.DigimarcVC;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -391,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3JZ8T294M7;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
@@ -400,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digimarc.DigimarcVC;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -438,7 +440,7 @@
 			repositoryURL = "ssh://git@bitbucket.digimarc.net:7999/md/dmsdk-apple-binary-packages.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.6.0-beta2";
+				version = "3.6.0-beta3";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
