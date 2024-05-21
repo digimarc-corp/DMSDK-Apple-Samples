@@ -380,7 +380,7 @@
 			repositoryURL = "https://github.com/digimarc-corp/DMSDK-Apple.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.7.3;
+				version = 3.7.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
