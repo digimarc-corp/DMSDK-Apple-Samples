@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        enableSDWSupport()
         return true
     }
     
@@ -39,6 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    
+    // This enables support for Secure Digital Watermarks (SDWs).
+    // SDWs will not be processed without a valid license key or internet connection.
+    func enableSDWSupport() {
+        Task {
+            do {
+                let _ = try await DMSDK.LicenseManager.startSecureSession(env: DMSDK.IlluminateEnvironment.production)
+            } catch {
+                await MainActor.run {
+                    print("Failed to start Secure Digital Watermark session.")
+                }
+            }
+        }
+    }
 }
 

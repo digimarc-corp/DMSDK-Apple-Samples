@@ -25,7 +25,7 @@ You'll need a valid evaluation or commercial license key to use the core feature
 2. Enter your API Key in either the App Delegate or Info.plist as described below.
 3. Run the app on a connected device. The iOS Simulator does not support video capture.
 
-If you are using `AppDelegate` to pass in your API Key, add the following line of code before returning from `application(_ :didFinishLaunchingWithOptions:) -> Bool`.
+If you are using `AppDelegate` to pass in your API Key, add the following line of code before the `enableSDWSupport()` call.
 
 ```swift
 LicenseManager.APIKey = "LICENSE_KEY_GOES_HERE"

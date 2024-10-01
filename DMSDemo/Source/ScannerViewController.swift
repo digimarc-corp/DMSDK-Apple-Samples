@@ -10,6 +10,9 @@ import AVFoundation
 import DMSDK
 import SafariServices
 
+var _illuminate_configuration: DMSDK.IlluminateConfiguration?
+
+
 class ScannerViewController: UIViewController, AudioCaptureReaderResultsDelegate, VideoCaptureReaderResultsDelegate
 {
 
@@ -87,7 +90,7 @@ class ScannerViewController: UIViewController, AudioCaptureReaderResultsDelegate
     
     override func viewDidDisappear(_ animated: Bool)
     {
-        super.viewDidAppear(animated)
+        super.viewDidDisappear(animated)
         
         self.readersEnabled = false
     }
@@ -227,11 +230,20 @@ class ScannerViewController: UIViewController, AudioCaptureReaderResultsDelegate
     
     func setupVideoCaptureReader()
     {
-    
-        self.videoCaptureSession = AVCaptureSession()
         
+        _illuminate_configuration = DMSDK.IlluminateConfiguration(
+            env: DMSDK.IlluminateEnvironment.production,
+            accountId: "account id here",
+            name: "Mobile Verify Testing",
+            apiKey: "api key here",
+            fields: [.redirectUrl]
+        )
+
+        
+        self.videoCaptureSession = AVCaptureSession()
         do {
-            self.videoCaptureReader = try VideoCaptureReader(symbologies: self.videoSymbologies, options: [:])
+            self.videoCaptureReader = try VideoCaptureReader(symbologies: self.videoSymbologies, options: [
+                DMSDK.ReaderOptionKey.illuminateServiceConfiguration: _illuminate_configuration])
         } catch {
             if  let readerError = error as? DMSError {
                 if  readerError.code == .invalidLicense {
@@ -316,6 +328,7 @@ class ScannerViewController: UIViewController, AudioCaptureReaderResultsDelegate
                 fatalError(resolverError.localizedDescription)
             }
         }
+        
     }
     
     func captureSessionRuntimeError(notification: Notification)
@@ -372,21 +385,47 @@ class ScannerViewController: UIViewController, AudioCaptureReaderResultsDelegate
     {
         if let payload = payloads.first
         {
-            self.resolver?.resolve(payload, queue: OperationQueue.main)
+            var isV11 = false
+            
+            let options = [ReaderOptionKey.illuminateServiceConfiguration: _illuminate_configuration as Any];
+            
+            DispatchQueue.main.async
             {
-                (content, error) in
-                
-                if let error = error
+                if let metadata = self.resolver?.resolveV11(payload, options: options)
                 {
-                    self.showError(error)
-                    
-                    print(error)
-                }
-                else if let content = content
-                {
-                    if let url = content.items.first?.url
+                    if !metadata.isEmpty
                     {
-                        self.openURL(url)
+                        isV11 = true
+                        
+                        if let redirectUrl = metadata["redirectUrl"]
+                        {
+                            if let URL = URL(string: redirectUrl)
+                            {
+                                self.openURL(URL)
+                            }
+                        }
+                    }
+                }
+                
+                if !isV11
+                {
+                    self.resolver?.resolve(payload, queue: OperationQueue.main)
+                    {
+                        (content, error) in
+                        
+                        if let error = error
+                        {
+                            self.showError(error)
+                            
+                            print(error)
+                        }
+                        else if let content = content
+                        {
+                            if let url = content.items.first?.url
+                            {
+                                self.openURL(url)
+                            }
+                        }
                     }
                 }
             }
