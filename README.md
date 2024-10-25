@@ -1,14 +1,16 @@
 # DMSDK - iOS Sample Apps
 
+These samples build with [DMSDK 4.0.0](https://github.com/digimarc-corp/DMSDK-Apple)
+
 ## DMSDemo
-The DMSDemo project showcases how to integrate core Digimarc Mobile SDK APIs. DMSDemo is an ideal starting point for applications that create and handle the AV Foundation pipeline, such as the camera device, preview layer, session, etc.
+The DMSDemo project showcases how to integrate core Digimarc Mobile SDK APIs. DMSDemo is an ideal starting point for applications that create and handle the AV Foundation pipeline, such as the camera device, preview layer, session, and so on.
 
 ## DM Stock Take
 The DM Stock Take application lets you scan barcodes from various distances. The values are then displayed with a colored background over the corresponding barcode. The app is configured to scan UPC-A, EAN-13, ITF-14, and Code 128 barcodes, which are commonly used in "stock-taking" scenarios.
 
-The app performs additional processing to smooth out the visualization of the barcode values and locations on screen. Individual barcodes are tracked across read operations. This data is used to "fill in" results for barcodes that aren't read in one frame or another, which prevents a flickering effect.
+The app performs additional processing to improve the appearance of the barcode values and locations on screen. Individual barcodes are tracked across read operations. This data is used to "fill in" results for barcodes that aren't read in one frame or another, which prevents a flickering effect.
 
-On the main interface are toggles to adjust the read distance and visualization smoothing. They can be changed while the device is scanning.
+On the main interface are toggles to adjust the read distance and appearance. They can be changed while the device is scanning.
 
 - Note: Watch a [video demo of DM Stock Take][1]
 

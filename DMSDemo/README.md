@@ -28,4 +28,18 @@ If you are using `AppDelegate` to pass in your API Key, add the following line o
 ```swift
 LicenseManager.APIKey = "LICENSE_KEY_GOES_HERE"
 ```
-If the Info.plist method is preferred, enter a new key for `DMSAPIKey` and your API Key as its `String` value.
+If the Info.plist method is preferred, enter a new key for `DMSAPIKey` and your license key as its `String` value.
+
+## Illuminate
+
+DMSDemo now works with the [Digimarc Illuminate Platform](https://www.digimarc.com/product-digitization). You'll need a Mobile SDK license key created in Illuminate and a Mobile API key. For instructions on generating these two keys, see [Introducing the Digimarc Mobile SDK](https://landing.digimarc.com).
+
+You can retrieve Illuminate metadata for an image using the new [resolveV11 function](https://landing.digimarc.com/mobile-sdk/documentation/iOS/Classes/DMSResolver.html#/c:objc(cs)DMSResolver(im)resolveV11:options:).
+
+```swift
+let metadata = self.resolver?.resolveV11(payload, options: options)
+```
+For information about the metadata parameters you can request, see the 
+[Illuminate Mobile REST API documentation](https://github.com/digimarc-corp/illuminate-mobile-rest-api). 
+For the code to construct the options, see `setupVideoCaptureReader()` in 
+[ScannerViewController.swift](https://github.com/digimarc-corp/DMSDK-Apple-Samples/blob/main/DMSDemo/Source/ScannerViewController.swift#L234).
